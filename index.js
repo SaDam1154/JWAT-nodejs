@@ -11,7 +11,8 @@ app.get('/', (req, res) => {
     res.json('It is work!');
 });
 
+//Hoặc enviroment PORT
 const PORT = 3000;
 app.listen(PORT || 3000, () => {
-    console.log(`Server iss running on`, PORT || '3000');
+    console.log(`Server is running on PORT:`, PORT || '3000');
 });
